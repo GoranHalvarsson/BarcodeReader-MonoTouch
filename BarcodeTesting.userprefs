@@ -1,16 +1,12 @@
-﻿<Properties>
+<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.Workbench ActiveDocument="BarcodeTesting/Controllers/CameraViewController.cs">
     <Files>
       <File FileName="BarcodeTesting/Controllers/CameraViewController.cs" Line="60" Column="4" />
       <File FileName="BarcodeTesting/Controllers/BarcodeViewController.cs" Line="16" Column="33" />
       <File FileName="BarcodeTesting/Controllers/CameraOverLayView.cs" Line="52" Column="28" />
-      <File FileName="../Panduro/Panduro.iPhone/Controllers/CameraOverLayView.cs" Line="420" Column="1" />
-      <File FileName="../Panduro/Panduro.iPhone/Controllers/CameraViewController.cs" Line="224" Column="1" />
       <File FileName="BarcodeTesting/Main.cs" Line="36" Column="21" />
       <File FileName="BarcodeTesting/Controllers/TabBarController.cs" Line="24" Column="9" />
-      <File FileName="../Panduro/Panduro.iPhone/Controllers/BarcodeViewController.cs" Line="374" Column="52" />
-      <File FileName="../Panduro/Panduro.iPhone/Controllers/TabbarController.cs" Line="175" Column="57" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
