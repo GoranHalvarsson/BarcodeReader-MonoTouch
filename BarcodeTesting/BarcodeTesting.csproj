@@ -82,18 +82,19 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
-    <Reference Include="MonoTouch.Dialog, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>MonoTouch.Dialog.dll</HintPath>
-    </Reference>
     <Reference Include="zxingMonoTouch, Version=1.0.4163.18960, Culture=neutral, PublicKeyToken=null">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Lib\zxingMonoTouch.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoTouch.Dialog, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\MonoTouch.Dialog.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Lib\zxingMonoTouch.dll" />
+    <None Include="Lib\MonoTouch.Dialog.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainWindow.xib.designer.cs">
