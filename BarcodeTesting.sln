@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeTesting", "BarcodeTesting\BarcodeTesting.csproj", "{B400B07B-16D2-4200-9BE9-1F64E279A3DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B400B07B-16D2-4200-9BE9-1F64E279A3DF}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{B400B07B-16D2-4200-9BE9-1F64E279A3DF}.Debug|iPhone.Build.0 = Debug|iPhone
+		{B400B07B-16D2-4200-9BE9-1F64E279A3DF}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{B400B07B-16D2-4200-9BE9-1F64E279A3DF}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{B400B07B-16D2-4200-9BE9-1F64E279A3DF}.Release|iPhone.ActiveCfg = Release|iPhone
+		{B400B07B-16D2-4200-9BE9-1F64E279A3DF}.Release|iPhone.Build.0 = Release|iPhone
+		{B400B07B-16D2-4200-9BE9-1F64E279A3DF}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{B400B07B-16D2-4200-9BE9-1F64E279A3DF}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = BarcodeTesting\BarcodeTesting.csproj
+	EndGlobalSection
+EndGlobal
