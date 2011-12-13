@@ -144,15 +144,27 @@ namespace BarcodeTesting.Controllers
 				_imageView.Image.Dispose();
 				
 				//The iris - we don't want that one
-				NSNotificationCenter.DefaultCenter.AddObserver(new NSString("PLCameraViewIrisAnimationDidEndNotification"), (notification) => {   
-			        
-					if(this.View != null)
-					{
-						_imageView.RemoveFromSuperview();
+				NSTimer timer = NSTimer.CreateScheduledTimer(new TimeSpan(0, 0, 2),delegate
+				{
+				
+				
+					_imageView.RemoveFromSuperview();
 						
-						this.OverlayView.StartWorker();
-					}
-				});  
+					this.OverlayView.StartWorker();
+				
+			
+				});
+			
+			
+//				NSNotificationCenter.DefaultCenter.AddObserver(new NSString("PLCameraViewIrisAnimationDidEndNotification"), (notification) => {   
+//			        
+//					if(this.View != null)
+//					{
+//						_imageView.RemoveFromSuperview();
+//						
+//						this.OverlayView.StartWorker();
+//					}
+//				});   
 			
 			
 		}
