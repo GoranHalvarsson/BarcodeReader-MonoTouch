@@ -6,15 +6,11 @@
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{B400B07B-16D2-4200-9BE9-1F64E279A3DF}</ProjectGuid>
-    <ProjectTypeGuids>{E613F3A2-FE9C-494F-B74E-F63BCB86FEA6};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
     <RootNamespace>BarcodeTesting</RootNamespace>
-    <MainNibFile>MainWindow.xib</MainNibFile>
     <AssemblyName>BarcodeTesting</AssemblyName>
-    <MtouchMinimumOS>3.0</MtouchMinimumOS>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <BundleDisplayName>Scan It</BundleDisplayName>
-    <BundleIcon>Icon.png</BundleIcon>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -109,7 +105,7 @@
     <Compile Include="Controllers\CameraOverLayView.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="MainWindow.xib" />
+    <InterfaceDefinition Include="MainWindow.xib" xmlns="" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

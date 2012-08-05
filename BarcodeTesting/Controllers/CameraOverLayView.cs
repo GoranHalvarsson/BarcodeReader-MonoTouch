@@ -55,7 +55,7 @@ namespace BarcodeTesting.Controllers
 		private Hashtable hints;
 		
 		private static com.google.zxing.oned.MultiFormatOneDReader _multiFormatOneDReader = null;
-		private static RectangleF picFrame = new RectangleF(0, 146, 320, 157);
+        private static RectangleF picFrame;
 		private static UIImage _theScreenImage = null;
 	  #endregion
 
@@ -125,13 +125,32 @@ namespace BarcodeTesting.Controllers
 
 		private void Worker()
         {
-            
-	            //iphone 4 : 960 x 640
-				//iphone 3 : 320 x 480
-				if(DeviceHardware.Version == DeviceHardware.HardwareVersion.iPhone4)
-				{
-					picFrame = new RectangleF(0, 146*2, 320*2, 157*2);
-				}
+                float fY1;
+                float fY2;
+
+                float scale = 1f;
+                
+                // check if device has retina display, if so scale factor by 2
+                if (UIScreen.MainScreen.RespondsToSelector(new MonoTouch.ObjCRuntime.Selector(@"scale")) &&
+                    UIScreen.MainScreen.Scale == 2)
+                    scale = 2f;
+
+                // check if the device is an ipad or an iphone
+                if (UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone)
+                {
+                    fY1 = 146f / UIScreen.MainScreen.Bounds.Height * scale;     
+                    fY2 = 157f / UIScreen.MainScreen.Bounds.Height * scale;
+                }
+                else
+                {
+                    // ipad - constants probably need to be modified
+
+                    fY1 = 146f / UIScreen.MainScreen.Bounds.Height * scale;     
+                    fY2 = 157f / UIScreen.MainScreen.Bounds.Height * scale;
+                }
+
+                picFrame = new RectangleF(0, UIScreen.MainScreen.Bounds.Height * fY1, UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height * fY2);
+
 				
 				if(hints==null)
 				{
