@@ -55,7 +55,7 @@ namespace BarcodeTesting.Controllers
 		private Hashtable hints;
 		
 		private static com.google.zxing.oned.MultiFormatOneDReader _multiFormatOneDReader = null;
-        private static RectangleF picFrame;
+        private static RectangleF picFrame = RectangleF.Empty;
 		private static UIImage _theScreenImage = null;
 	  #endregion
 
@@ -128,29 +128,35 @@ namespace BarcodeTesting.Controllers
                 float fY1;
                 float fY2;
 
-                float scale = 1f;
+                float scale;
                 
-                // check if device has retina display, if so scale factor by 2
-                if (UIScreen.MainScreen.RespondsToSelector(new MonoTouch.ObjCRuntime.Selector(@"scale")) &&
-                    UIScreen.MainScreen.Scale == 2)
-                    scale = 2f;
-
-                // check if the device is an ipad or an iphone
-                if (UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone)
+                // calculate picFrame just once
+                if (picFrame == RectangleF.Empty)
                 {
-                    fY1 = 146f / UIScreen.MainScreen.Bounds.Height * scale;     
-                    fY2 = 157f / UIScreen.MainScreen.Bounds.Height * scale;
+
+                    // check if device has retina display, if so scale factor by 2
+                    if (UIScreen.MainScreen.RespondsToSelector(new MonoTouch.ObjCRuntime.Selector(@"scale")) &&
+                        UIScreen.MainScreen.Scale == 2)
+                        scale = 2f;
+                    else
+                        scale = 1f;
+
+                    // check if the device is an ipad or an iphone
+                    if (UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone)
+                    {
+                        fY1 = 146f / UIScreen.MainScreen.Bounds.Height * scale;     
+                        fY2 = 157f / UIScreen.MainScreen.Bounds.Height * scale;
+                    }
+                    else
+                    {
+                        // ipad - constants probably need to be modified if running at native screen res
+
+                        fY1 = 146f / UIScreen.MainScreen.Bounds.Height * scale;     
+                        fY2 = 157f / UIScreen.MainScreen.Bounds.Height * scale;
+                    }
+
+                    picFrame = new RectangleF(0, UIScreen.MainScreen.Bounds.Height * fY1, UIScreen.MainScreen.Bounds.Width * scale, UIScreen.MainScreen.Bounds.Height * fY2);
                 }
-                else
-                {
-                    // ipad - constants probably need to be modified
-
-                    fY1 = 146f / UIScreen.MainScreen.Bounds.Height * scale;     
-                    fY2 = 157f / UIScreen.MainScreen.Bounds.Height * scale;
-                }
-
-                picFrame = new RectangleF(0, UIScreen.MainScreen.Bounds.Height * fY1, UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height * fY2);
-
 				
 				if(hints==null)
 				{
