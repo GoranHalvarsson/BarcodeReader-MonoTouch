@@ -1,19 +1,20 @@
-<Properties>
+﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BarcodeTesting/Controllers/CameraViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BarcodeTesting/Controllers/CameraOverLayView.cs">
     <Files>
-      <File FileName="BarcodeTesting/Controllers/CameraViewController.cs" Line="60" Column="4" />
-      <File FileName="BarcodeTesting/Controllers/BarcodeViewController.cs" Line="16" Column="33" />
-      <File FileName="BarcodeTesting/Controllers/CameraOverLayView.cs" Line="52" Column="28" />
+      <File FileName="BarcodeTesting/Controllers/BarcodeViewController.cs" Line="116" Column="23" />
+      <File FileName="BarcodeTesting/Controllers/CameraOverLayView.cs" Line="177" Column="44" />
       <File FileName="BarcodeTesting/Main.cs" Line="36" Column="21" />
       <File FileName="BarcodeTesting/Controllers/TabBarController.cs" Line="24" Column="9" />
+      <File FileName="BarcodeTesting/Controllers/CameraViewController.cs" Line="66" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="BarcodeTesting" expanded="True" selected="True">
-            <Node name="References" expanded="True" />
-            <Node name="Controllers" expanded="True" />
+          <Node name="BarcodeTesting" expanded="True">
+            <Node name="Controllers" expanded="True">
+              <Node name="CameraOverLayView.cs" selected="True" />
+            </Node>
             <Node name="Images" expanded="True" />
             <Node name="Lib" expanded="True" />
             <Node name="Sounds" expanded="True" />
@@ -39,6 +40,8 @@
     <BreakpointStore>
       <Breakpoint file="/Users/goranhalvarsson/Projects/BarcodeTesting/BarcodeTesting/CameraViewController.cs" line="285" />
       <Breakpoint file="/Users/goranhalvarsson/Projects/BarcodeTesting/BarcodeTesting/OverLayView.cs" line="32" />
+      <Breakpoint file="/Users/dj_technohead/Projects/Teraport/Monotouch/Library/BarcodeReader-MonoTouch/BarcodeTesting/Controllers/BarcodeViewController.cs" line="131" />
+      <Breakpoint file="/Users/dj_technohead/Projects/Teraport/Monotouch/Library/BarcodeReader-MonoTouch/BarcodeTesting/Controllers/CameraOverLayView.cs" line="188" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -6,11 +6,11 @@
 	<dict>
 		<key>BarcodeTesting.exe</key>
 		<data>
-		Klexxo8qOZp25IcgUbgdugmEVs4=
+		HyN96E1Rja1HB4/KQ6RRV5QMcvI=
 		</data>
 		<key>BarcodeTesting.exe.mdb</key>
 		<data>
-		PUMH3GGRWfUeBRcdHptRvsJGYSo=
+		1G+j2hBMCq2mIhx5o/UdaI1plVQ=
 		</data>
 		<key>Icon.png</key>
 		<data>
@@ -50,15 +50,19 @@
 		</data>
 		<key>Mono.Security.dll</key>
 		<data>
-		f502slP/FdHG4mUZqfC5FLh+mTw=
+		lB037ai8cZqdMlXvY4SI/T5OJDY=
 		</data>
 		<key>Mono.Security.dll.mdb</key>
 		<data>
-		M+SUq3Vx6qJmHj8N4e7PQby1Px0=
+		h6jzBWlcnaP6f41kCHzVtmBW4mI=
 		</data>
 		<key>MonoTouch.Dialog.dll</key>
 		<data>
 		z0mlEVRsFPBLJ0A3Y6FYe1PBORE=
+		</data>
+		<key>MonoTouchDebugConfiguration.txt</key>
+		<data>
+		RPTVp2rUNdzxC0LDDu6mwJPHWx8=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -66,7 +70,7 @@
 		</data>
 		<key>Settings.bundle/Root.plist</key>
 		<data>
-		bMpfqgT1Hqm2+W2740CaVFoHHdU=
+		ddYwuHyBR1STpnVi4KQzbDxOT3g=
 		</data>
 		<key>Sounds/beep.wav</key>
 		<data>
@@ -74,39 +78,39 @@
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		ADSYBobOa8DJ0AuQrREIG5cVocQ=
+		IqpbOdAMSDY2wjAKKOWUB7zg5VY=
 		</data>
 		<key>System.Core.dll.mdb</key>
 		<data>
-		W+UhlLxC/4JU139eC+9Yoh2tTzE=
+		wO93iT2re6stYfJlxgT2ttcm0rQ=
 		</data>
 		<key>System.dll</key>
 		<data>
-		1/e4OKiEe7qfx8zXPccWnOfRA7U=
+		f+Uj7CQnM6Crfk+wxuId76Ogg9Q=
 		</data>
 		<key>System.dll.mdb</key>
 		<data>
-		TZhMZhszjvmHA+waZYhhWlC1kXc=
+		0Coe51dInX6wPjllC+BX2/mS1ag=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		HCJmdxJz5sijeaxlfNYmLqF/u0w=
+		6AHTUHDGNo/sQZ7X1w7XFTAnMqA=
 		</data>
 		<key>monotouch.dll</key>
 		<data>
-		4EmlEU1UFkJAYmYqEWZVdHMapUA=
+		cs7CgMyFDqVHocSxBm9gSxFgTVM=
 		</data>
 		<key>monotouch.dll.mdb</key>
 		<data>
-		EPAGC3QIchYKaqmi/TjC1pyD7uA=
+		2OZzGkyYM+ypCnIhDfCYY958QvY=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		teosSy2sTivf9U3hqaVIJYpMeQM=
+		aD9taz+NoajWDAKt0xes+rzzzCM=
 		</data>
 		<key>mscorlib.dll.mdb</key>
 		<data>
-		moXoTnl/uWNJTpudtgGYzsh6dJg=
+		KmkALCEcGVQ3UmH5roq0ppfyZJ0=
 		</data>
 		<key>zxingMonoTouch.dll</key>
 		<data>
